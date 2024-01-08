@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, rgb(8, 3, 78) 0%, rgba(0,0,0,1) 49%, rgba(0,0,0,1) 79%, rgba(48,2,57,1) 100%);
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 106, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(191, 205, 225, 0.15);
+}
+
+input {
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 5px;
+    background: rgba(84,150,243,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px outset rgba(10, 10, 208, 0.275);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.653);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(13, 14, 14, 0.15);
+    color: #fff;
+
+}
+#function-btn{
+    display: flex;
+    justify-content: space-around;
+    /* grid-column: span 4; */
+    grid-area: 6/1/7/5;
+    
+}
+button:hover{
+    opacity: 1;
+    background-color: rgb(1, 4, 73);
+}
+
+button.operator {
+    background-color: #f7921ef0;
+    color: white;
+    border: 2px outset rgba(255, 87, 3, 0.611);
+}
+button.operator:hover {
+    background-color: #ff8801;
+    border: 2px inset #000;
+}
+
+button.equal {
+    background-color: #4caf50;
+    color: white;
+}
+button.equal:hover{
+    background-color: #0fbf15;
+}
+button.clear {
+    background-color: #e74d3c;
+    color: white;
+}
+button.clear:hover {
+    background-color: #ff1900;
+}
