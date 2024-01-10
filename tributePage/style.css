@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alike&family=Poiret+One&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    background-color: #000;
+    position: relative;
+}
+
+#header-container {
+    position: relative;
+}
+
+#header-above {
+    top: 180px;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+#header-above #header-above-text h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Adamina', serif;
+}
+
+#header-above #header-above-text h2 {
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'Adamina', serif;
+}
+
+
+#header-play-button {
+    margin-top: 7rem;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+}
+
+#header-play-button:hover {
+    background-color: rgba(255, 255, 255, 0.122);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+#video-container video {
+    width: 100vw;
+}
+
+.main-container {
+    position: absolute;
+    padding: 0;
+    width: 100vw;
+    margin-top: -280px;
+}
+
+#hero-section {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 400px;
+    align-items: center;
+    height: 750px;
+    background-color: #fff;
+    color: black;
+}
+
+#hero-section #hero-text {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    font-size: 50px;
+    width: 590px
+}
+
+#hero-text div {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#hero-img img {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 42.55vw;
+}
+#bio-container {
+    height: 100vh;
+}
+#bio-content {
+    font-family: 'Adamina', serif;
+    width: 60%;
+    margin: auto;
+    padding: 6rem 6rem;
+    border-bottom: 1.5px solid lightgray;
+}
+#bio-content h1 {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 6rem;
+}
+
+#bio-content p {
+    width: 800px;
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    font-weight: 400;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 50px 0;
+}
+footer img {
+    width: 20px;
+    text-align: center;
+}
+footer a {
+    color: rgb(64, 156, 192);
+}
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    #header-above {
+        top: 60px;
+        width: 100vw;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        z-index: 2;
+        pointer-events: auto;
+    }
+    #header-above #header-above-text h1 {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    #header-above #header-above-text h2 {
+        margin-top: 5px;
+        font-size: 1.3rem;
+    }
+    #header-play-button {
+        margin-top: 1.8rem;
+        width: 60px;
+    }
+    .main-container {
+        position: absolute;
+        padding: 0;
+        width: 100vw;
+        margin-top: -10px;
+    }
+    #hero-section {
+        height: 280px;
+    }
+    #hero-section #hero-text {
+        position: absolute;
+        top: 75px;
+        left: 20px;
+        font-size: 20px;
+        width: 250px;
+        opacity: 0.8;
+    }
+    #hero-text div {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #hero-img img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 55.55vw;
+    }
+    #bio-container {
+        height: 46vh;
+    }
+    #bio-content {
+        width: 85%;
+        padding: 3rem 0;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #bio-content h1 {
+        font-size: 2.2rem;
+        font-weight: 100;
+        margin-bottom: 2.5rem;
+    }
+
+    #bio-content p {
+        margin: auto;
+        width: 92%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 100;
+    }
+    footer {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    footer img {
+        width: 15px;
+    }
+
+}
