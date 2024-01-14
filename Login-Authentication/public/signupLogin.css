@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #ffff;
+}
+
+#container {
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#container h1 {
+    font-size: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    border: none;
+    border-radius: 20px;
+}
+
+input[type="text"],
+[type="password"] {
+    padding: 17px 23px;
+    font-size: 20px;
+    width: 400px;
+    outline: 4px solid blueviolet;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    width:120px;
+}
+
+input[type="submit"]:hover {
+    border-radius: 5px;
+    outline: greenyellow solid 2px;
+}
+
+#link-box {
+    text-align: center;
+}
+
+#link-box h3 {
+    font-size: 16px;
+}
+
+#link-box a {
+    color: blueviolet;
+
+}
+
+/* CSS for mobile viewport */
+
+@media screen and (max-width:768px) {
+    #container {
+        margin: 150px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        width: 100vw;
+    }
+    #container h1 {
+        font-size: 50px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    input[type="text"],
+    [type="password"] {
+        padding: 10px 15px;
+        font-size: 18px;
+        width: 70vw;
+        height: 5vh;
+        margin: auto;
+        outline: 3px solid blueviolet;
+    }
+}
